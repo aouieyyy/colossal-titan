@@ -1,0 +1,97 @@
+<prefab version="1.7.0">
+	<group name="instance=MOD/kong.xml" pos="0.0 -1.6 23.3" rot="0.0 0.0 0.0">
+		<script pos="0.2 0.1 -0.1" file="MOD/script/kong.lua" param0="type=investigate chase" param1="speed=8.5" param2="turnspeed=0.25">
+			<group name="atst2" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" prop0="texture=12 0.2">
+				<body name="body" tags="body" pos="-0.7 2.9 -1.4" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.1 5.1 0.0" rot="0.0 -180.0 0.0" texture="1 0.7" blendtexture="8 0.3" density="9999999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="obody">
+						<group>
+							<vox pos="-4.2 4.8 -0.7" texture="1 0.7" blendtexture="8 0.3" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="ohandl">
+								<joint pos="1.1 3.6 0.1" rot="90 90 -90" type="hinge" size="1" rotstrength="4000000000" limits="-80 10"/>
+								<vox pos="-0.3 -5.3 0.7" rot="0 0 20" texture="1 0.7" blendtexture="8 0.3" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="oarml">
+									<joint name="l_leg_joint" pos="1.0 6.15 -1.25" rot="-20 -90 0" type="hinge" size="1" rotstrength="900000000" limits="-20 90"/>
+								</vox>
+							</vox>
+						</group>
+						<group pos="8.3 0.0 -0.0">
+							<vox pos="-4.2 4.8 -0.7" texture="1 0.7" blendtexture="8 0.3" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="ohandr">
+								<joint pos="-1.0 3.6 0.1" rot="90 270 -90" type="hinge" size="1" rotstrength="4000000000" limits="-80 10"/>
+								<vox pos="0.3 -5.3 0.7" rot="0 0 -20" texture="1 0.7" blendtexture="8 0.3" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="oarmr">
+									<joint name="l_leg_joint" pos="-0.9 6.15 -1.25" rot="20 -90 0" type="hinge" size="1" rotstrength="900000000" limits="-20 90"/>
+								</vox>
+							</vox>
+						</group>
+						<vox tags="target7" pos="-0.1 5.5 0.8" rot="90 0 0" file="MOD/robot/mech-basic2.vox" object="otarget2"/>
+					</vox>
+				</body>
+				<group pos="-0.8 2.8 0.5">
+					<body name="head" tags="aim" pos="0.0 4.2 0.0" dynamic="true">
+						<vox tags="nocull" pos="0.0 9.3 -3.4" rot="0.0 -180.0 0.0" texture="1 0.6" blendtexture="8 0.2" density="99999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="ohead">
+							<light name="eye_area" tags="eye" pos="0.0 1.35 2.5" rot="0 0 0.0" type="area" color="0.0 0.0 0.0" angle="60" size=".4 .1" reach="15" fogscale="1"/>
+							<vox tags="target8" pos="-0.1 2.3 0.9" rot="90 0 0" density="0.0004" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+							<vox tags="target1" pos="-0.1 1.8 1.7" rot="90 0 0" density="0.0004" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+							<vox pos="0.3 1.0 2.3" rot="310 0 0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+							<vox pos="-0.4 1.0 2.3" rot="310 0 0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+							<vox pos="0.6 2.7 1.6" rot="0.0 50.0 0.0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+							<vox pos="-0.5 2.7 1.6" rot="0.0 50.0 0.0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+							<vox pos="0.5 2.7 1.6" rot="0.0 40.0 0.0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+							<vox pos="-0.6 2.7 1.6" rot="0.0 40.0 0.0" file="MOD/robot/mech-basic2.vox" object="ot"/>
+						</vox>
+						<joint name="head_joint" pos="0.0 10.6 -1.95" rot="90 90 0" type="hinge" size="0.6" rotspring="0" limits="-30 30"/>
+					</body>
+					<voxbox name="hole" pos="0.1 15.0 -5.1" rot="0.0 -180.0 0.0" size="1 7 1" brush="hole"/>
+					<voxbox name="hole" pos="0.1 15.5 -4.3" rot="0.0 -180.0 0.0" size="1 7 1" brush="hole"/>
+					<body name="head2" tags="aim unbreakable" pos="-0.1 6.4 0.2" rot="0.0 0.0 0.0" dynamic="true">
+						<script pos="0.0 1.1 -6.7" file="MOD/script/trexroar.lua">
+							<body name="guns" tags="springboard" pos="0.1 0.6 -1.8" rot="0.0 0.0 0.0" dynamic="true">
+								<vox tags="board" pos="0.0 5.25 3.2" rot="0 180.0 0.0" texture="1 0.6" blendtexture="8 0.2" density="0.004" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="ohead2"/>
+								<joint name="sniffer" tags="sniffer" pos="-0.5 6.5 3.8" rot="0.0 90.0 0.0" type="hinge" size="0.4" rotstrength="0.0015" rotspring="0.6" limits="-50 1"/>
+								<joint name="sniffer" tags="spring" pos="0.5 6.5 3.8" rot="0.0 90.0 0.0" type="hinge" size="0.4" limits="-50 1"/>
+							</body>
+						</script>
+					</body>
+				</group>
+				<group name="l_leg" pos="-0.9 -0.1 -2.0">
+					<body name="l_leg" tags="leg" pos="-0.4 1.9 1.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-1.3 3.3 -1.1" rot="0.0 -180.0 0.0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="olegupr">
+							<joint name="l_leg_joint" pos="-0.7 4.15 -0.65" rot="0 -90 0" type="hinge" size="1" limits="-30 30"/>
+							<vox tags="target5" pos="0.5 2.2 0.2" rot="90 0 0" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+						</vox>
+					</body>
+					<body name="l_leg2" tags="leg" pos="0.9 0.7 1.3" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-3.1 2.0 -1.4" rot="0 -180 0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="olegdownr">
+							<joint name="l_leg_joint" pos="0.1 3.35 0.95" rot="0.0 90.0 -90" type="hinge" size="0.6" rotstrength="0.5" limits="-15 40"/>
+							<vox tags="target4" pos="-0.0 1.7 -0.3" rot="90 0 0" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot" pos="-0.2 1.6 -0.7" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-2.3 0.0 0.2" rot="0.0 -180.0 0.0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="ofootr">
+							<joint name="l_foot_joint" pos="-0.3 1.55 -1.15" rot="0.0 90.0 -90.0" type="hinge" size="0.6" rotstrength="0" rotspring="0" limits="-25 25"/>
+							<vox tags="target9" pos="0.0 0.5 -0.3" file="MOD/robot/mech-basic2.vox" object="otarget1"/>
+						</vox>
+					</body>
+				</group>
+				<group name="r_leg" pos="4.3 -0.1 -2.0">
+					<body name="r_leg" tags="leg" pos="-0.4 1.9 1.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-2.8 3.3 -1.1" rot="0.0 -180.0 0.0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="olegupl">
+							<joint name="r_leg_joint" pos="0.8 4.15 -0.65" rot="0 -90 0" type="hinge" size="1" limits="-30 30"/>
+							<vox tags="target6" pos="-0.3 2.2 0.3" rot="90 0 0" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+						</vox>
+					</body>
+					<body name="r_leg2" tags="leg" pos="0.9 0.7 1.3" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-3.7 2.0 -1.4" rot="0 -180 0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="olegdownl">
+							<joint name="r_leg_joint" pos="-0.1 3.35 0.95" rot="0.0 90.0 -90" type="hinge" size="0.6" rotstrength="0.5" limits="-15 40"/>
+							<vox tags="target3" pos="-0.1 1.7 -0.3" rot="90 0 0" file="MOD/robot/mech-basic2.vox" object="otarget0"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot " pos="-0.2 1.6 -0.7" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-2.3 0.0 0.2" rot="0.0 -180.0 0.0" texture="1 0.7" blendtexture="8 0.3" density="99999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="ofootl">
+							<joint name="r_foot_joint" pos="0.3 1.55 -1.15" rot="0.0 90.0 -90.0" type="hinge" size="0.6" rotstrength="0" rotspring="0" limits="-25 25"/>
+							<vox tags="target2" pos="0.0 0.6 -0.3" file="MOD/robot/mech-basic2.vox" object="otarget1"/>
+						</vox>
+					</body>
+				</group>
+			</group>
+		</script>
+	</group>
+</prefab>
+

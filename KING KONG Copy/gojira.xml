@@ -1,0 +1,137 @@
+<prefab version="1.3.0">
+	<group name="instance=MOD/gojira.xml" pos="28.9 0.0 0.0" rot="0.0 0.0 0.0">
+		<script pos="0.2 0.1 -0.1" file="MOD/script/trextest.lua" param0="type=investigate chase" param1="speed=9" param2="turnspeed=0.2">
+			<group name="atst2" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" prop0="texture=12 0.2">
+				<body name="body" tags="body" pos="0.05 3.8 0.3" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull unbreakable core" pos="0.05 2.1 0.4" rot="0.0 -180.0 0.0" texture="29 0.4" density="9999999999999999999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="gbodyo">
+						<vox tags=" unbreakable" pos="0.0 -4.4 -11.6" texture="29 0.8" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gtail1">
+							<joint pos="0.0 1.7 2.8" rot="90 0 0" type="hinge" size="0.5" rotstrength="10" limits="-22 22"/>
+						</vox>
+						<vox tags=" unbreakable" pos="0.0 -4.4 -5.7" texture="29 0.7" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gbodytail">
+							<joint pos="0.0 4.2 1.5" rot="0 90 0" type="hinge" size="1" rotstrength="10" limits="-20 20"/>
+							<light pos="0.9 5.6 -0.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="-0.9 5.6 -0.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+						</vox>
+						<vox tags=" unbreakable" pos="0.0 -2.2 -3.0" texture="29 0.7" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gbody3">
+							<joint pos="0.0 3.4 0.9" rot="0 90 0" type="hinge" size="1" rotstrength="10" limits="-15 20"/>
+							<light pos="0.9 5.4 -2.1" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="0.9 4.3 -2.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="-0.9 4.3 -2.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="-0.9 5.4 -2.1" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="2.1 4.3 -1.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+							<light pos="-2.1 4.3 -1.7" color="0.0 0.55 0.78" scale="1" fogscale="2"/>
+						</vox>
+						<vox tags="unbreakable" pos="0.0 -4.4 -17.4" rot="-1 0 0" texture="29 0.8" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gtail2">
+							<joint pos="0.0 1.4 2.9" rot="90 0 0" type="hinge" size="0.5" rotstrength="9" limits="-23 23"/>
+						</vox>
+						<vox tags="unbreakable" pos="0.0 -4.4 -22.8" rot="-2 0 0" texture="29 0.8" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gtail3">
+							<joint pos="0.0 1.1 2.5" rot="90 0 0" type="hinge" size="0.5" rotstrength="8" limits="-24 24"/>
+						</vox>
+						<vox tags="unbreakable" pos="0.0 -4.4 -27.6" rot="-2 0 0" texture="29 0.8" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gtail4">
+							<joint pos="0.0 1.0 2.3" rot="90 0 0" type="hinge" size="0.5" rotstrength="7" limits="-25 25"/>
+						</vox>
+						<vox tags="unbreakable" pos="0.0 -4.5 -32.6" rot="-4 0 0" texture="29 0.8" density="99999999" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="gtail5">
+							<joint pos="0.0 0.7 2.4" rot="90 0 0" type="hinge" size="0.5" rotstrength="6" limits="-26 26"/>
+						</vox>
+						<light pos="1.8 14.5 2.3" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="2.0 13.5 0.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="1.1 15.0 0.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="1.1 13.8 -1.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="1.1 10.9 -3.6" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="1.1 7.7 -4.3" color="0.0 0.6 0.78" scale="2.5" fogscale="3"/>
+						<light pos="1.0 4.9 -4.6" color="0.0 0.6 0.78" scale="1.5" fogscale="3"/>
+						<light pos="1.8 9.6 -1.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="2.2 7.2 -2.6" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="2.2 5.2 -3.2" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="2.0 3.4 -4.0" color="0.0 0.6 0.78" scale="1.5" fogscale="3"/>
+						<light pos="2.1 11.9 -0.8" color="0.0 0.6 0.78" scale="2.5" fogscale="3"/>
+						<light pos="-1.8 14.5 2.3" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-2.1 13.5 0.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-1.0 15.0 0.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-1.1 13.8 -1.8" color="0.0 0.6 0.78" scale="3" fogscale="3"/>
+						<light pos="-1.1 10.9 -3.7" color="0.0 0.6 0.78" scale="3" fogscale="3"/>
+						<light pos="-1.1 7.7 -4.5" color="0.0 0.6 0.78" scale="2.5" fogscale="3"/>
+						<light pos="-1.1 4.9 -4.6" color="0.0 0.6 0.78" scale="1.5" fogscale="3"/>
+						<light pos="-2.0 9.6 -1.8" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-2.2 7.2 -2.6" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-2.2 5.2 -3.2" color="0.0 0.6 0.78" scale="2" fogscale="3"/>
+						<light pos="-1.9 3.4 -4.0" color="0.0 0.6 0.78" scale="1.5" fogscale="3"/>
+						<light pos="-2.2 11.9 -0.8" color="0.0 0.6 0.78" scale="2.5" fogscale="3"/>
+					</vox>
+				</body>
+				<group pos="0.1 7.6 -1.6">
+					<body tags="aim unbreakable" pos="0.0 3.1 4.5" dynamic="true">
+						<vox tags="unbreakable nocull" pos="0.0 6.6 -7.2" rot="0.0 180.0 0.0" texture="29 0.7" density="0.0005" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="gbody2">
+							<joint pos="0.0 2.1 -0.7" rot="0 -90 0" type="hinge" size="0.8" rotstrength="0.03" rotspring="0" limits="-30 6"/>
+							<light pos="0.7 4.2 0.1" color="0.0 0.6 0.78" fogscale="2"/>
+							<light pos="0.7 4.0 -0.8" color="0.0 0.6 0.78" fogscale="2"/>
+							<light pos="0.8 3.7 -1.9" color="0.0 0.6 0.78" fogscale="2"/>
+							<light pos="-0.6 4.2 0.1" color="0.0 0.6 0.78" fogscale="2"/>
+							<light pos="-0.6 4.0 -0.8" color="0.0 0.6 0.78" fogscale="2"/>
+							<light pos="-0.7 3.7 -1.9" color="0.0 0.6 0.78" fogscale="2"/>
+						</vox>
+						<vox tags="unbreakable" pos="-3.1 2.8 -8.4" rot="0 -180.0 0.0" texture="29 0.7" density="22" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="garmr">
+							<joint pos="0.2 1.5 -1.5" rot="0 -90 0" type="hinge" size="0.3" rotstrength="25" limits="-50 30"/>
+						</vox>
+						<vox tags="unbreakable" pos="3.2 2.8 -8.4" rot="00 -180.0 0.0" texture="29 0.7" density="22" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="garml">
+							<joint pos="-0.1 1.5 -1.5" rot="0 -90 0" type="hinge" size="0.3" rotstrength="25" limits="-50 30"/>
+						</vox>
+					</body>
+					<body name="head" tags="aim unbreakable" pos="0.0 2.7 -2.5" dynamic="true">
+						<vox tags="nocull unbreakable" pos="0.0 9.2 -3.1" rot="0.0 -180.0 0.0" texture="29 0.6" density="0.00004" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="ghead">
+							<light name="eye_area" tags="eye" pos="0.0 0.85 1.9" rot="0 0 0.0" type="area" color="0.0 0.0 0.0" angle="60" size=".4 .1" reach="15" fogscale="1"/>
+							<light pos="0.6 1.5 1.0" color="0.0 0.6 0.78" scale="0.2" fogscale="10"/>
+							<light pos="-0.6 1.5 1.0" color="0.0 0.6 0.78" scale="0.2" fogscale="10"/>
+						</vox>
+						<joint name="head_joint" pos="0.0 10.9 -2.05" rot="-90 -90.0 0.0" type="hinge" size="0.6" rotspring="0" limits="-40 40"/>
+						<vox tags="target11 unbreakable" pos="-0.05 9.8 -3.7" rot="65 0 0" density="0.1" file="MOD/robot/mech-basic2.vox" object="target11" color="0.6 0.43 0.38"/>
+					</body>
+				</group>
+				<body name="head2" tags="aim unbreakable" pos="0.0 12.4 -3.6" rot="0.0 0.0 0.0" dynamic="true">
+					<script pos="0.0 1.1 -6.7" file="MOD/script/trexroar.lua">
+						<body name="guns" tags="springboard" pos="0.1 0.6 -1.8" rot="0.0 0.0 0.0" dynamic="true">
+							<vox tags="board unbreakable" pos="0.0 5.2 4.0" rot="-3 180.0 0.0" texture="29 0.6" density="0.004" strength="999999999999999999999999999999999999999999999999999999" prop="true" file="MOD/robot/mech-basic2.vox" object="headdown"/>
+							<joint name="sniffer" tags="sniffer" pos="-0.4 6.0 4.6" rot="0.0 90.0 0.0" type="hinge" size="0.4" rotstrength="0.0015" rotspring="0.6" limits="-30 1"/>
+							<joint name="sniffer" tags="rotate24 saber spring" pos="0.5 6.0 4.6" rot="0.0 90.0 0.0" type="hinge" size="0.4" limits="-30 1"/>
+						</body>
+					</script>
+				</body>
+				<group name="r_leg" pos="0.9 -0.1 -2.0">
+					<body name="r_leg" tags="leg unbreakable" pos="0.3 1.8 1.2" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull unbreakable" pos="1.4 5.2 -0.1" rot="0.0 -180.0 0.0" texture="29 0.5" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="glegupl">
+							<joint name="r_leg_joint" pos="0.4 4.75 -0.55" rot="0 -90 0" type="hinge" size="1" limits="-30 20"/>
+						</vox>
+					</body>
+					<body name="r_leg2" tags="leg force=100 unbreakable" pos="-1.0 0.8 2.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="3.2 2.2 -1.9" rot="0 -180.0 3" texture="29 0.6" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="glegdownl">
+							<joint name="r_leg_joint" pos="0.2 4.55 1.05" rot="0.0 90.0 -90" type="hinge" size="1" rotstrength="0.5" limits="-15 40"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot force=50 unbreakable" pos="0.3 1.6 0.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="2.5 0.0 -0.5" rot="0 -180.0 0.0" texture="29 0.7" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="gfootl">
+							<joint name="r_foot_joint" pos="0.1 1.85 -1.15" rot="0.0 90.0 -90" type="hinge" size="0.4" rotstrength="0" rotspring="0" limits="-25 30"/>
+						</vox>
+					</body>
+				</group>
+				<group name="l_leg" pos="-0.9 -0.1 -2.0">
+					<body name="l_leg" tags="leg unbreakable" pos="-0.4 1.9 1.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-1.0 5.1 0.1" rot="0.0 -180.0 0.0" texture="29 0.5" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="glegupr">
+							<joint name="l_leg_joint" pos="-0.3 4.75 -0.55" rot="0 -90 0" type="hinge" size="1" limits="-30 20"/>
+						</vox>
+					</body>
+					<body name="l_leg2" tags="leg force=100 unbreakable" pos="0.9 0.7 1.3" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-2.9 2.3 -1.2" rot="0 -180 -3" texture="29 0.6" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="glegdownr">
+							<joint name="l_leg_joint" pos="-0.1 4.55 1.05" rot="0.0 90.0 -90" type="hinge" size="1" rotstrength="0.5" limits="-15 40"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot force=50 unbreakable" pos="-0.2 1.6 -0.7" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull" pos="-2.3 0.0 0.2" rot="0.0 -180.0 0.0" texture="29 0.7" density="99999999999999" strength="999999999999999999999999999999999999999999999999999999" file="MOD/robot/mech-basic2.vox" object="gfootr">
+							<joint name="l_foot_joint" pos="0.0 1.85 -1.15" rot="0.0 90.0 -90.0" type="hinge" size="0.4" rotstrength="0" rotspring="0" limits="-25 30"/>
+						</vox>
+					</body>
+				</group>
+			</group>
+		</script>
+	</group>
+</prefab>
+

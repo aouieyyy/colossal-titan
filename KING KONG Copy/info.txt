@@ -1,0 +1,5 @@
+name = KING KONG
+author = tislericsm
+description = HOW TO USE: Once you are playing, hit the Esc/pause button and look for the Spawn option at the bottom. Click this to find a menu of available items and choose which one you want to put in the game.
+tags=
+

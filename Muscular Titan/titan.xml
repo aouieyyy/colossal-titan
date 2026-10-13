@@ -1,0 +1,47 @@
+<prefab version="1.7.0">
+	<group name="Muscular Titan" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 0.0" file="MOD/script/titan.lua" param0="speed=9" param1="turnspeed=0.2">
+			<group name="titan">
+				<body name="pelvis" tags="titanpart body" pos="-0.0000 22.6300 0.0000" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.0000 -0.8300 1.3450" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/pelvis.vox"/>
+				</body>
+				<body name="chest" tags="titanpart" pos="-0.0000 39.7850 0.4380" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.0500 0.2150 1.9070" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/chest.vox"/>
+				</body>
+				<body name="head" tags="titanpart" pos="-0.0000 54.3850 0.2920" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.0500 -0.4850 1.1530" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/head.vox"/>
+				</body>
+				<body name="upperarmR" tags="titanpart" pos="8.9790 46.7930 3.9420" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.2790 -15.0930 -1.1970" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/upperarmR.vox"/>
+				</body>
+				<body name="upperarmL" tags="titanpart" pos="-8.9790 46.7930 3.9420" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.2290 -15.0930 -1.0970" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/upperarmL.vox"/>
+				</body>
+				<body name="forearmR" tags="titanpart" pos="9.0520 31.7550 1.1680" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.1520 -12.3550 -1.4230" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/forearmR.vox"/>
+				</body>
+				<body name="forearmL" tags="titanpart" pos="-9.0520 31.7550 1.1680" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.2020 -12.4550 -0.7230" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/forearmL.vox"/>
+				</body>
+				<body name="thighR" tags="titanpart" pos="3.7960 22.6300 0.0000" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.0460 -11.7300 0.9450" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/thighR.vox"/>
+				</body>
+				<body name="thighL" tags="titanpart" pos="-3.7960 22.6300 0.0000" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.5040 -11.7300 2.6450" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/thighL.vox"/>
+				</body>
+				<body name="shinR" tags="titanpart" pos="3.9420 10.9500 0.5840" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.0420 -7.1500 0.5110" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/shinR.vox"/>
+				</body>
+				<body name="shinL" tags="titanpart" pos="-3.9420 10.9500 0.5840" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.5920 -7.1500 4.5610" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/shinL.vox"/>
+				</body>
+				<body name="footR" tags="titanpart foot" pos="3.9420 3.8690 -1.7520" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="-0.6420 -3.8690 0.5470" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/footR.vox"/>
+				</body>
+				<body name="footL" tags="titanpart foot" pos="-3.9420 3.8690 -1.7520" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull" pos="0.8920 -3.8690 4.1970" rot="0.0 180.0 0.0" density="5000000" strength="100" file="MOD/vox/footL.vox"/>
+				</body>
+			</group>
+		</script>
+	</group>
+</prefab>

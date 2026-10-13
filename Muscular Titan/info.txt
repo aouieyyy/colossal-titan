@@ -1,0 +1,4 @@
+name = Muscular Titan
+author = Kiro
+description = A 59 m tall muscular titan (about 3x King Kong) that walks after you. HOW TO USE: enable the mod, start a sandbox level, press Esc and open Spawn, then pick Titans > Muscular Titan. Settings are at the top of script/titan.lua.
+tags =

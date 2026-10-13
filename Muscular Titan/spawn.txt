@@ -1,0 +1,3 @@
+#List spawnable instances here in this format (path is relative to the mod folder):
+#path/to/prefab.xml : Category/Name
+titan.xml : Titans/Muscular Titan
